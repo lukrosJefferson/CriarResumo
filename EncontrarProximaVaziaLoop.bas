@@ -27,7 +27,7 @@ Sub EncontrarProximaVaziaLoop()
             If IsEmpty(celula) Or celula.Value = "" Then ' Verifica se está vazia
                 If contagem = 0 Then
                     celula.Select
-                    AutoSomaInteligente.AutoSomaInteligente()
+                    AutoSomaInteligente.AutoSomaInteligente
                     contagem = 1
                 ElseIf contagem = 1 Then
                     contagem = contagem + 1

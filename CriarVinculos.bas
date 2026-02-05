@@ -2,6 +2,7 @@
 ' commit para marca data
 
 Attribute VB_Name = "CriarVinculos"
+
 Sub CriarVinculos()
     Dim ws As Worksheet
     Dim novaPlanilha As Worksheet

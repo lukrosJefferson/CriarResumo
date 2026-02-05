@@ -1,4 +1,6 @@
+
 Attribute VB_Name = "DeletarLinhasComCelulaVazia"
+
 Sub DeletarLinhasComCelulaVazia()
     Dim ws As Worksheet
     Dim lastRow As Long

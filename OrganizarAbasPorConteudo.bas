@@ -1,3 +1,6 @@
+
+Attribute VB_Name = "OrganizarAbasPorConteudo"
+
 Sub OrganizarAbasPorConteudo()
     Dim ws As Worksheet
     Dim arrSheetNames As Variant

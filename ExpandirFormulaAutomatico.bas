@@ -1,3 +1,6 @@
+
+Attribute VB_Name = "ExpandirFormulaAutomatico"
+
 Sub ExpandirFormulaAutomatico()
     
     ' Declarando variáveis

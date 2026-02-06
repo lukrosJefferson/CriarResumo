@@ -7,9 +7,13 @@ Sub EncontrarProximaVaziaLoop()
     Dim primeiraCelula As Range
     Dim ultimaLinha As Long
     
+    ' Desativar o cálculo automático e outras funcionalidades para otimização
+    Application.Calculation = xlCalculationManual
+    Application.ScreenUpdating = False ' Desativa a atualização da tela para evitar piscar
+    
     Set ws = ThisWorkbook.Sheets("RESUMO") ' Defina sua planilha
     
-    Dim Colunas(0 To 28) As String
+    Dim Colunas(0 To 29) As String
     Dim DColunas As Integer
     
     Colunas(0)  = "B"
@@ -23,24 +27,25 @@ Sub EncontrarProximaVaziaLoop()
     Colunas(8)  = "N"
     Colunas(9)  = "O"
     Colunas(10) = "Q"
-    Colunas(11) = "T"
-    Colunas(12) = "U"
-    Colunas(13) = "W"
-    Colunas(14) = "X"
-    Colunas(15) = "Z"
-    Colunas(16) = "AA"
-    Colunas(17) = "AC"
-    Colunas(18) = "AB"
-    Colunas(19) = "AF"
-    Colunas(20) = "AG"
-    Colunas(21) = "AI"
-    Colunas(22) = "AJ"
-    Colunas(23) = "Al"
-    Colunas(24) = "AM"
-    Colunas(25) = "AO"
-    Colunas(26) = "AP"
-    Colunas(27) = "AR"
-    Colunas(28) = "AT"
+    Colunas(11) = "R"
+    Colunas(12) = "T"
+    Colunas(13) = "U"
+    Colunas(14) = "W"
+    Colunas(15) = "X"
+    Colunas(16) = "Z"
+    Colunas(17) = "AA"
+    Colunas(18) = "AC"
+    Colunas(19) = "AB"
+    Colunas(20) = "AF"
+    Colunas(21) = "AG"
+    Colunas(22) = "AI"
+    Colunas(23) = "AJ"
+    Colunas(24) = "Al"
+    Colunas(25) = "AM"
+    Colunas(26) = "AO"
+    Colunas(27) = "AP"
+    Colunas(28) = "AR"
+    Colunas(29) = "AT"
     
     For DColunas = LBound(Colunas) To UBound(Colunas)
         

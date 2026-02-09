@@ -10,9 +10,9 @@ Sub CriarReseumo()
     
     CriarVinculos.CriarVinculos
     
-    ExpandirFormulaAutomatico.ExpandirFormulaAutomatico
-    
     EncontrarProximaVaziaLoop.EncontrarProximaVaziaLoop
+    
+    ExpandirFormulaAutomatico.ExpandirFormulaAutomatico
     
     DeletarLinhasComCelulaVazia.DeletarLinhasComCelulaVazia
     

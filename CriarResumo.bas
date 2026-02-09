@@ -21,6 +21,6 @@ Sub CriarReseumo()
     Application.Calculation = xlCalculationAutomatic
     
     ' RESUMO foi criado
-    MsBox "RESUMO foi criado"
+    MsgBox "RESUMO foi criado"
 
 End Sub

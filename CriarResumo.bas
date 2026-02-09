@@ -14,6 +14,8 @@ Sub CriarReseumo()
     
     DeletarLinhasComCelulaVazia.DeletarLinhasComCelulaVazia
     
+    EncontrarProximaVaziaLoop.EncontrarProximaVaziaLoop
+    
     ' Reativar o cálculo automático e a atualização da tela
     Application.ScreenUpdating = True ' Reativa a atualização da tela
     Application.Calculation = xlCalculationAutomatic

@@ -10,9 +10,6 @@ Sub OrganizarAbasPorConteudo()
     Dim nomeDaAba As String
     Dim valorDaAba As String
     
-    ' Desabilita a atualização da tela para acelerar a macro
-    Application.ScreenUpdating = False
-
     ' Define a cÃ©lula que serÃ¡ usada como critÃ©rio de ordenaÃ§Ã£o (ex: T2)
     Set chaveCelula = Range("T2") ' <<<<< AJUSTE AQUI: Mude "T2" para a cÃ©lula desejada
 
@@ -46,7 +43,5 @@ Sub OrganizarAbasPorConteudo()
         ' Move a aba para a posiÃ§Ã£o correta (i-1 pois o Ã­ndice comeÃ§a em 0 para o .Move)
         ThisWorkbook.Sheets(arrSheetNames(i)).Move Before:=ThisWorkbook.Sheets(i)
     Next i
-    
-    MsgBox "Planilhas organizadas", vbInformation
     
 End Sub

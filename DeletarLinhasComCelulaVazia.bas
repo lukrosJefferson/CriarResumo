@@ -9,7 +9,7 @@ Sub DeletarLinhasComCelulaVazia()
 
     ' --- CONFIGURAÇÕES ---
     Set ws = ThisWorkbook.ActiveSheet ' Ou Sheets("NomeDaSuaPlanilha")
-    ColunaParaVerificar = 1 ' Verifica a coluna A (1)
+    ColunaParaVerificar = 2 ' Verifica a coluna A (1)
 
     ' Encontra a última linha com dados na coluna definida
     lastRow = ws.Cells(ws.Rows.Count, ColunaParaVerificar).End(xlUp).Row

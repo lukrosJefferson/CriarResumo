@@ -10,10 +10,6 @@ Sub CriarVinculos()
     Dim categoria As String
     Dim comparacao As String
     
-    ' Desativar o cálculo automático e outras funcionalidades para otimização
-    Application.Calculation = xlCalculationManual
-    Application.ScreenUpdating = False ' Desativa a atualização da tela para evitar piscar
-    
     ' Adiciona uma nova planilha para consolidar os links
     Set novaPlanilha = ThisWorkbook.Sheets.Add(After:=ThisWorkbook.Sheets(ThisWorkbook.Sheets.Count))
     novaPlanilha.Name = "RESUMO"
@@ -101,10 +97,5 @@ Sub CriarVinculos()
     ' Ajusta a largura das colunas para melhor visualização
     novaPlanilha.Columns("A:B").AutoFit
     
-    ' Reativar o cálculo automático e a atualização da tela
-    Application.ScreenUpdating = True ' Reativa a atualização da tela
-    Application.Calculation = xlCalculationAutomatic
-    
-    MsgBox "Vínculos criados com sucesso na planilha 'RESUMO'!", vbInformation
 End Sub
 

@@ -23,5 +23,4 @@ Sub DeletarLinhasComCelulaVazia()
         End If
     Next i
 
-    MsgBox "Processo concluído!", vbInformation
 End Sub

@@ -11,6 +11,6 @@ Sub AutoSomaInteligente()
     primeiraLinha = ActiveCell.Offset(-1, 0).End(xlUp).Row
     
     ' Aplica a fórmula apenas para o intervalo com dados
-    ActiveCell.Formula = "=SUM(" & Range(Cells(primeiraLinha, ActiveCell.Column), _
-                         ActiveCell.Offset(-1, 0)).Address(False, False) & ")"
+    ActiveCell.Formula = "=IFERROR" & "SUM(" & Range(Cells(primeiraLinha, ActiveCell.Column), _
+                         ActiveCell.Offset(-1, 0)).Address(False, False) & ")" & ",0)"
 End Sub

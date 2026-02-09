@@ -12,9 +12,9 @@ Sub CriarReseumo()
     
     ExpandirFormulaAutomatico.ExpandirFormulaAutomatico
     
-    DeletarLinhasComCelulaVazia.DeletarLinhasComCelulaVazia
-    
     EncontrarProximaVaziaLoop.EncontrarProximaVaziaLoop
+    
+    DeletarLinhasComCelulaVazia.DeletarLinhasComCelulaVazia
     
     ' Reativar o cálculo automático e a atualização da tela
     Application.ScreenUpdating = True ' Reativa a atualização da tela

@@ -111,6 +111,4 @@ Sub ExpandirFormulaAutomatico()
     
     Next CeluasDF
     
-    ' Mensagem de confirmação (opcional)
-    MsgBox "Fórmulas expandidas com sucesso até a linha " & UltimaLinha & "!"
 End Sub

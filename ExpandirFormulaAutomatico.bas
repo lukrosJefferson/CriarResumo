@@ -11,7 +11,7 @@ Sub ExpandirFormulaAutomatico()
     Dim FimFor As Variant
     
     ' Atribuindo varáveis
-    FimForDF = Range("A3").Value
+    FimForDF = Range("B3").Value
     
     ' Declarando o Array
     Dim CeluasDaFormula(0 To 16) As String
@@ -93,7 +93,7 @@ Sub ExpandirFormulaAutomatico()
 
         ' Encontra a última linha preenchida na coluna adjacente (por exemplo, Coluna A)    
         ' Considera que a coluna A tem dados que determinam até onde a fórmula deve ir
-        UltimaLinha = ws.Range("A" & ws.Rows.Count).End(xlUp).Row
+        UltimaLinha = ws.Range("B" & ws.Rows.Count).End(xlUp).Row
 
         ' Define o intervalo da célula original com a fórmula (ex: B2)
         Set CelulaOriginal = ws.Range(CeluasDaFormula(CeluasDF)) ' Altere para a célula onde sua fórmula começa

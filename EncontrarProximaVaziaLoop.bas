@@ -13,7 +13,7 @@ Sub EncontrarProximaVaziaLoop()
     
     Set ws = ThisWorkbook.Sheets("RESUMO") ' Defina sua planilha
     
-    Dim Colunas(0 To 29) As String
+    Dim Colunas(0 To 35) As String
     Dim DColunas As Integer
     
     Colunas(0)  = "B"
@@ -46,6 +46,12 @@ Sub EncontrarProximaVaziaLoop()
     Colunas(27) = "AP"
     Colunas(28) = "AR"
     Colunas(29) = "AT"
+    Colunas(30) = "D"
+    Colunas(31) = "J"
+    Colunas(32) = "P"
+    Colunas(33) = "V"
+    Colunas(34) = "AB"
+    Colunas(35) = "AH"
     
     For DColunas = LBound(Colunas) To UBound(Colunas)
         
@@ -58,9 +64,17 @@ Sub EncontrarProximaVaziaLoop()
         For Each celula In ws.Range(primeiraCelula.Offset(1, 0), ws.Cells(ultimaLinha + 1, Colunas(DColunas)))
             If IsEmpty(celula) Or celula.Value = "" Then ' Verifica se está vazia
                 If contagem = 0 Then
-                    celula.Select
-                    AutoSomaInteligente.AutoSomaInteligente
-                    contagem = 1
+                    If Colunas(DColunas) = "D" Or Colunas(DColunas) = "J" Or _
+                    Colunas(DColunas) = "P" Or Colunas(DColunas) = "V" Or _
+                    Colunas(DColunas) = "AB" Or Colunas(DColunas) = "AH" Then
+                        celula.Select
+                        MediaSeInteligente.MediaSeInteligente
+                        contagem = 1
+                    Else
+                        celula.Select
+                        AutoSomaInteligente.AutoSomaInteligente
+                        contagem = 1
+                    End If
                 ElseIf contagem = 1 Then
                     contagem = contagem + 1
                 Else

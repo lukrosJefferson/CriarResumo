@@ -11,7 +11,7 @@ Sub MediaSeInteligente()
     primeiraLinha = ActiveCell.Offset(-1, 0).End(xlUp).Row
     
     ' Aplica a fórmula apenas para o intervalo com dados
-    ActiveCell.Formula = "=IFERROR" & "AVERAGEIF(" & Range(Cells(primeiraLinha, ActiveCell.Column), _
+    ActiveCell.Formula = "=IFERROR(" & "AVERAGEIF(" & Range(Cells(primeiraLinha, ActiveCell.Column), _
                      ActiveCell.Offset(-1, 0)).Address(False, False) & ", "">0"", " & _
                      Range(Cells(primeiraLinha, ActiveCell.Column), _
                      ActiveCell.Offset(-1, 0)).Address(False, False) & ")" & ",0)"

@@ -14,7 +14,7 @@ Sub ExpandirFormulaAutomatico()
     FimForDF = Range("B3").Value
     
     ' Declarando o Array
-    Dim CeluasDaFormula(0 To 16) As String
+    Dim CeluasDaFormula(0 To 15) As String
     Dim CeluasDF As Integer
     
     ' Atribuindo o valor do Array
@@ -33,11 +33,10 @@ Sub ExpandirFormulaAutomatico()
     CeluasDaFormula(12) = "AN3"
     CeluasDaFormula(13) = "AP3"
     CeluasDaFormula(14) = "AQ3"
-    CeluasDaFormula(15) = "AS3"
-    CeluasDaFormula(16) = "AU3"
+    CeluasDaFormula(15) = "AU3"
     
     ' Declarando o Array
-    Dim FormulaDaColuna(0 To 16) As String
+    Dim FormulaDaColuna(0 To 15) As String
     Dim FormulaDC As Integer
     
     ' Atribuindo o valor do Array
@@ -56,11 +55,10 @@ Sub ExpandirFormulaAutomatico()
     FormulaDaColuna(12) = "=SEERRO(AM3/AF3;0)"
     FormulaDaColuna(13) = "=SEERRO(AM3+AO3;0)"
     FormulaDaColuna(14) = "=SEERRO(AP3/AF3;0)"
-    FormulaDaColuna(15) = "=SEERRO(AR3/22;0)"
-    FormulaDaColuna(16) = "=SEERRO(AG3/AT3;0)"
+    FormulaDaColuna(15) = "=SEERRO(AG3/AT3;0)"
     
     ' Declarando o Array
-    Dim RangeDaFormula(0 To 16) As String
+    Dim RangeDaFormula(0 To 15) As String
     Dim RangeDF As Integer
     
     ' Atribuindo o valor do Array
@@ -79,8 +77,7 @@ Sub ExpandirFormulaAutomatico()
     RangeDaFormula(12) = "AN3:AN"
     RangeDaFormula(13) = "AP3:AP"
     RangeDaFormula(14) = "AQ3:AQ"
-    RangeDaFormula(15) = "AS3:AS"
-    RangeDaFormula(16) = "AU3:AU"
+    RangeDaFormula(15) = "AU3:AU"
     
     ' Define a planilha em que você está trabalhando
     Set ws = ThisWorkbook.Sheets("RESUMO") ' Altere para o nome real da sua planilha

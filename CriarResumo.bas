@@ -10,6 +10,10 @@ Sub CriarReseumo()
     
     CriarVinculos.CriarVinculos
     
+    ExpandirFormulaAutomaticoAS.ExpandirFormulaAutomaticoAS
+    
+    DeletarLinhasComCelulaVazia.DeletarLinhasComCelulaVazia
+    
     EncontrarProximaVaziaLoop.EncontrarProximaVaziaLoop
     
     ExpandirFormulaAutomatico.ExpandirFormulaAutomatico

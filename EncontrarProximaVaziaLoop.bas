@@ -7,10 +7,6 @@ Sub EncontrarProximaVaziaLoop()
     Dim primeiraCelula As Range
     Dim ultimaLinha As Long
     
-    ' Desativar o cálculo automático e outras funcionalidades para otimização
-    Application.Calculation = xlCalculationManual
-    Application.ScreenUpdating = False ' Desativa a atualização da tela para evitar piscar
-    
     Set ws = ThisWorkbook.Sheets("RESUMO") ' Defina sua planilha
     
     Dim Colunas(0 To 35) As String

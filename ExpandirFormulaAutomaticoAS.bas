@@ -1,7 +1,7 @@
 
-Attribute VB_Name = "ExpandirFormulaAutomatico"
+Attribute VB_Name = "ExpandirFormulaAutomaticoAS"
 
-Sub ExpandirFormulaAutomatico()
+Sub ExpandirFormulaAutomaticoAS()
     
     ' Declarando variáveis
     Dim ws As Worksheet

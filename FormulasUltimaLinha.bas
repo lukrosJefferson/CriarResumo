@@ -12,14 +12,49 @@ Sub FormulasUltimaLinha()
 
     Set ws = ThisWorkbook.Sheets("RESUMO") ' Defina sua planilha
     
-    Dim Colunas(0 To 4) As String
+    Dim Colunas(0 To 39) As String
     Dim IDColunas As Integer
     
-    Colunas(0) = "B"
-    Colunas(1) = "C"
-    Colunas(2) = "E"
-    Colunas(3) = "F"
-    Colunas(4) = "G"
+    Colunas(0)  = "B"
+    Colunas(1)  = "C"
+    Colunas(2)  = "E"
+    Colunas(3)  = "F"
+    Colunas(4)  = "G"
+    Colunas(5)  = "H"
+    Colunas(6)  = "I"
+    Colunas(7)  = "K"
+    Colunas(8)  = "L"
+    Colunas(9)  = "M"
+    Colunas(10) = "N"
+    Colunas(11) = "O"
+    Colunas(12) = "Q"
+    Colunas(13) = "R"
+    Colunas(14) = "S"
+    Colunas(15) = "T"
+    Colunas(16) = "U"
+    Colunas(17) = "W"
+    Colunas(18) = "X"
+    Colunas(19) = "Y"
+    Colunas(20) = "Z"
+    Colunas(21) = "AA"
+    Colunas(22) = "AC"
+    Colunas(23) = "AD"
+    Colunas(24) = "AE"
+    Colunas(25) = "AF"
+    Colunas(26) = "AG"
+    Colunas(27) = "AI"
+    Colunas(28) = "AJ"
+    Colunas(29) = "AK"
+    Colunas(30) = "AL"
+    Colunas(31) = "AM"
+    Colunas(32) = "AN"
+    Colunas(33) = "AO"
+    Colunas(34) = "AP"
+    Colunas(35) = "AQ"
+    Colunas(36) = "AR"
+    Colunas(37) = "AS"
+    Colunas(38) = "AT"
+    Colunas(39) = "AU"
     
     For IDColunas = LBound(Colunas) To UBound(Colunas)
     
@@ -46,7 +81,21 @@ Sub FormulasUltimaLinha()
         Next celula
         
         If Colunas(IDColunas) = "G" Then
-            ws.Range(LugarFormula).FormulaLocal = "=F" & NumeroLinha & "/B" & NumeroLinha
+            ws.Range(LugarFormula).FormulaLocal = "=SEERRO(F" & NumeroLinha & "/B" & NumeroLinha & ";0)"
+        ElseIf Colunas(IDColunas) = "M" Then
+            ws.Range(LugarFormula).FormulaLocal = "=SEERRO(L" & NumeroLinha & "/H" & NumeroLinha & ";0)"
+        ElseIf Colunas(IDColunas) = "S" Then
+            ws.Range(LugarFormula).FormulaLocal = "=SEERRO(R" & NumeroLinha & "/N" & NumeroLinha & ";0)"
+        ElseIf Colunas(IDColunas) = "Y" Then
+            ws.Range(LugarFormula).FormulaLocal = "=SEERRO(X" & NumeroLinha & "/T" & NumeroLinha & ";0)"
+        ElseIf Colunas(IDColunas) = "AE" Then
+            ws.Range(LugarFormula).FormulaLocal = "=SEERRO(AD" & NumeroLinha & "/Z" & NumeroLinha & ";0)"
+        ElseIf Colunas(IDColunas) = "AK" Then
+            ws.Range(LugarFormula).FormulaLocal = "=SEERRO(AJ" & NumeroLinha & "/AF" & NumeroLinha & ";0)"
+        ElseIf Colunas(IDColunas) = "AN" Then
+            ws.Range(LugarFormula).FormulaLocal = "=SEERRO(AM" & NumeroLinha & "/AF" & NumeroLinha & ";0)"
+        ElseIf Colunas(IDColunas) = "AQ" Then
+            ws.Range(LugarFormula).FormulaLocal = "=SEERRO(AP" & NumeroLinha & "/AF" & NumeroLinha & ";0)"
         Else
             ws.Range(LugarFormula).FormulaLocal = "=" & CPrimeira & "+" & CSegunda & "+" & CTerceira
         End If

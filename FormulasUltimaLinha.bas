@@ -8,16 +8,18 @@ Sub FormulasUltimaLinha()
     Dim CTerceira As String
     Dim LugarFormula As String
     Dim ultimaLinha As Long
+    Dim NumeroLinha
 
     Set ws = ThisWorkbook.Sheets("RESUMO") ' Defina sua planilha
     
-    Dim Colunas(0 To 3) As String
+    Dim Colunas(0 To 4) As String
     Dim IDColunas As Integer
     
     Colunas(0) = "B"
     Colunas(1) = "C"
     Colunas(2) = "E"
     Colunas(3) = "F"
+    Colunas(4) = "G"
     
     For IDColunas = LBound(Colunas) To UBound(Colunas)
     
@@ -37,11 +39,16 @@ Sub FormulasUltimaLinha()
                 ElseIf Contador = 4 Then 
                     CTerceira = celula.Offset(-1, 0).Address
                     LugarFormula = celula.Offset(1, 0).Address
+                    NumeroLinha  = celula.Offset(1, 0).Row
                 End If
                 Contador = Contador + 1
             End If
         Next celula
         
-        ws.Range(LugarFormula).FormulaLocal = "=" & CPrimeira & "+" & CSegunda & "+" & CTerceira
+        If Colunas(IDColunas) = "G" Then
+            ws.Range(LugarFormula).FormulaLocal = "=F" & NumeroLinha & "/B" & NumeroLinha
+        Else
+            ws.Range(LugarFormula).FormulaLocal = "=" & CPrimeira & "+" & CSegunda & "+" & CTerceira
+        End If
     Next IDColunas
 End Sub

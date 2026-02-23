@@ -9,7 +9,7 @@ Sub EncontrarProximaVaziaLoop()
     
     Set ws = ThisWorkbook.Sheets("RESUMO") ' Defina sua planilha
     
-    Dim Colunas(0 To 35) As String
+    Dim Colunas(0 To 36) As String
     Dim DColunas As Integer
     
     Colunas(0)  = "B"
@@ -48,6 +48,7 @@ Sub EncontrarProximaVaziaLoop()
     Colunas(33) = "V"
     Colunas(34) = "AB"
     Colunas(35) = "AH"
+    Colunas(36) = "AS"
     
     For DColunas = LBound(Colunas) To UBound(Colunas)
         
@@ -66,6 +67,8 @@ Sub EncontrarProximaVaziaLoop()
                         celula.Select
                         MediaSeInteligente.MediaSeInteligente
                         contagem = 1
+                    ElseIf Colunas(DColunas) = "AS" Then
+                        celula.Value = "-"
                     Else
                         celula.Select
                         AutoSomaInteligente.AutoSomaInteligente

@@ -97,6 +97,7 @@ Sub FormulasUltimaLinha()
         ElseIf Colunas(IDColunas) = "AQ" Then
             ws.Range(LugarFormula).FormulaLocal = "=SEERRO(AP" & NumeroLinha & "/AF" & NumeroLinha & ";0)"
         ElseIf Colunas(IDColunas) = "AS" Then
+            ws.Range(LugarFormula).Select
             SomarAtePrimeiraLinhaResumo.SomarAtePrimeiraLinhaResumo
         Else
             ws.Range(LugarFormula).FormulaLocal = "=" & CPrimeira & "+" & CSegunda & "+" & CTerceira

@@ -20,6 +20,8 @@ Sub CriarReseumo()
     
     DeletarLinhasComCelulaVazia.DeletarLinhasComCelulaVazia
     
+    FormulasUltimaLinha.FormulasUltimaLinha
+    
     ' Reativar o cálculo automático e a atualização da tela
     Application.ScreenUpdating = True ' Reativa a atualização da tela
     Application.Calculation = xlCalculationAutomatic

@@ -13,7 +13,7 @@ Sub SomarAtePrimeiraLinhaResumo()
         ' Insere a fórmula SUM(Coluna1Linha1 : ColunaAtualLinhaAcima)
         ' Exemplo se estiver na A10: =SUM(A1:A9)
         ActiveCell.Formula = "=SUM(" & Cells(1, colunaAtual).Address & ":" & _
-                             Cells(linhaAtual - 1, colunaAtual).Address & ")"
+                             Cells(linhaAtual - 1, colunaAtual).Address & ")/22"
     Else
         MsgBox "Você está na primeira linha. Não há dados acima para somar."
     End If

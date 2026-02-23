@@ -1,4 +1,6 @@
-Sub SomarAtePrimeiraLinha()
+Attribute VB_Name = "SomarAtePrimeiraLinhaResumo"
+
+Sub SomarAtePrimeiraLinhaResumo()
     Dim linhaAtual As Long
     Dim colunaAtual As Integer
     

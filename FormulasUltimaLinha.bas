@@ -1,3 +1,5 @@
+Attribute VB_Name = "FormulasUltimaLinha"
+
 Sub FormulasUltimaLinha()
     Dim ws As Worksheet
     Dim celula As Range

@@ -31,9 +31,9 @@ Sub ExpandirFormulaAutomatico()
     CeluasDaFormula(10) = "AK3"
     CeluasDaFormula(11) = "AM3"
     CeluasDaFormula(12) = "AN3"
-    CeluasDaFormula(13) = "AP3"
-    CeluasDaFormula(14) = "AQ3"
-    CeluasDaFormula(15) = "AU3"
+    CeluasDaFormula(13) = "AR3"
+    CeluasDaFormula(14) = "AS3"
+    CeluasDaFormula(15) = "AW3"
     
     ' Declarando o Array
     Dim FormulaDaColuna(0 To 15) As String
@@ -53,7 +53,7 @@ Sub ExpandirFormulaAutomatico()
     FormulaDaColuna(10) = "=SEERRO(AJ3/AF3;0)"
     FormulaDaColuna(11) = "=SEERRO(AJ3+AL3;0)"
     FormulaDaColuna(12) = "=SEERRO(AM3/AF3;0)"
-    FormulaDaColuna(13) = "=SEERRO(AM3+AO3;0)"
+    FormulaDaColuna(13) = "=SEERRO(AM3+AO3+AP3+AQ3;0)"
     FormulaDaColuna(14) = "=SEERRO(AP3/AF3;0)"
     FormulaDaColuna(15) = "=SEERRO(AG3/AT3;0)"
     
@@ -75,9 +75,9 @@ Sub ExpandirFormulaAutomatico()
     RangeDaFormula(10) = "AK3:AK"
     RangeDaFormula(11) = "AM3:AM"
     RangeDaFormula(12) = "AN3:AN"
-    RangeDaFormula(13) = "AP3:AP"
-    RangeDaFormula(14) = "AQ3:AQ"
-    RangeDaFormula(15) = "AU3:AU"
+    RangeDaFormula(13) = "AR3:AR"
+    RangeDaFormula(14) = "AS3:AS"
+    RangeDaFormula(15) = "AW3:AW"
     
     ' Define a planilha em que você está trabalhando
     Set ws = ThisWorkbook.Sheets("RESUMO") ' Altere para o nome real da sua planilha

@@ -14,7 +14,7 @@ Sub FormulasUltimaLinha()
 
     Set ws = ThisWorkbook.Sheets("RESUMO") ' Defina sua planilha
     
-    Dim Colunas(0 To 39) As String
+    Dim Colunas(0 To 41) As String
     Dim IDColunas As Integer
     
     Colunas(0)  = "B"
@@ -57,6 +57,8 @@ Sub FormulasUltimaLinha()
     Colunas(37) = "AS"
     Colunas(38) = "AT"
     Colunas(39) = "AU"
+    Colunas(40) = "AV"
+    Colunas(41) = "AW"
     
     For IDColunas = LBound(Colunas) To UBound(Colunas)
     
@@ -96,9 +98,11 @@ Sub FormulasUltimaLinha()
             ws.Range(LugarFormula).FormulaLocal = "=SEERRO(AJ" & NumeroLinha & "/AF" & NumeroLinha & ";0)"
         ElseIf Colunas(IDColunas) = "AN" Then
             ws.Range(LugarFormula).FormulaLocal = "=SEERRO(AM" & NumeroLinha & "/AF" & NumeroLinha & ";0)"
-        ElseIf Colunas(IDColunas) = "AQ" Then
-            ws.Range(LugarFormula).FormulaLocal = "=SEERRO(AP" & NumeroLinha & "/AF" & NumeroLinha & ";0)"
         ElseIf Colunas(IDColunas) = "AS" Then
+            ws.Range(LugarFormula).FormulaLocal = "=SEERRO(AR" & NumeroLinha & "/AF" & NumeroLinha & ";0)"
+        ElseIf Colunas(IDColunas) = "AW" Then
+            ws.Range(LugarFormula).FormulaLocal = "=SEERRO(AG" & NumeroLinha & "/AV" & NumeroLinha & ";0)"
+        ElseIf Colunas(IDColunas) = "AU" Then
             ws.Range(LugarFormula).Select
             SomarAtePrimeiraLinhaResumo.SomarAtePrimeiraLinhaResumo
         Else

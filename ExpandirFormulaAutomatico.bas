@@ -54,8 +54,8 @@ Sub ExpandirFormulaAutomatico()
     FormulaDaColuna(11) = "=SEERRO(AJ3+AL3;0)"
     FormulaDaColuna(12) = "=SEERRO(AM3/AF3;0)"
     FormulaDaColuna(13) = "=SEERRO(AM3+AO3+AP3+AQ3;0)"
-    FormulaDaColuna(14) = "=SEERRO(AP3/AF3;0)"
-    FormulaDaColuna(15) = "=SEERRO(AG3/AT3;0)"
+    FormulaDaColuna(14) = "=SEERRO(AR3/AF3;0)"
+    FormulaDaColuna(15) = "=SEERRO(AG3/AV3;0)"
     
     ' Declarando o Array
     Dim RangeDaFormula(0 To 15) As String

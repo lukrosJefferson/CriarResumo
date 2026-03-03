@@ -25,7 +25,7 @@ Sub ExpandirFormulaAutomaticoAU()
     Dim FormulaDC As Integer
     
     ' Atribuindo o valor do Array
-    FormulaDaColuna(0) = "=SEERRO(AR3/22;0)"
+    FormulaDaColuna(0) = "=SEERRO(AT3/22;0)"
     
     ' Declarando o Array
     Dim RangeDaFormula(0 To 0) As String

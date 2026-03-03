@@ -10,7 +10,7 @@ Sub CriarReseumo()
     
     CriarVinculos.CriarVinculos
     
-    ExpandirFormulaAutomaticoAS.ExpandirFormulaAutomaticoAS
+    ExpandirFormulaAutomaticoAU.ExpandirFormulaAutomaticoAU
     
     DeletarLinhasComCelulaVazia.DeletarLinhasComCelulaVazia
     

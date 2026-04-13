@@ -82,13 +82,14 @@ Sub CriarVinculos()
                 novaPlanilha.Range("AC" & linha).Formula = "='" & ws.Name & "'!E50"
                 novaPlanilha.Range("AD" & linha).Formula = "='" & ws.Name & "'!H50"
                 
-                ' Cria o vínculoS para aS célulaS B52, O52 e Z52 da planilha atual na Colunas AL, AR e Z52.
+                ' Cria o vínculoS para as célulaS B52, AA52, AB52, Z52 e R60 da planilha atual na Colunas AL, AP, AQ, AT, AV e AX.
                 ' A fórmula usa a sintaxe de referência externa do Excel: ='Nome da Planilha'!Célula
                 novaPlanilha.Range("AL" & linha).Formula = "='" & ws.Name & "'!O52"
                 novaPlanilha.Range("AP" & linha).Formula = "='" & ws.Name & "'!AA52"
                 novaPlanilha.Range("AQ" & linha).Formula = "='" & ws.Name & "'!AB52"
                 novaPlanilha.Range("AT" & linha).Formula = "='" & ws.Name & "'!B52"
                 novaPlanilha.Range("AV" & linha).Formula = "='" & ws.Name & "'!Z52"
+				novaPlanilha.Range("AX" & linha).Formula = "='" & ws.Name & "'!R60"
                 
                 
                 

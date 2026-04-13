@@ -10,7 +10,7 @@ Sub EncontrarProximaVaziaLoop()
     Set ws = ThisWorkbook.Sheets("RESUMO") ' Defina sua planilha
     
 	' Lista do For para saber qual colunas estão no Range
-    Dim Colunas(0 To 40) As String
+    Dim Colunas(0 To 39) As String
     Dim DColunas As Integer
     
     Colunas(0)  = "B"
@@ -52,8 +52,7 @@ Sub EncontrarProximaVaziaLoop()
     Colunas(36) = "AQ"
     Colunas(37) = "AU"
     Colunas(38) = "AV"
-	Colunas(39) = "AX"
-	Colunas(40) = "AY"
+	Colunas(39) = "AY"
     
     For DColunas = LBound(Colunas) To UBound(Colunas)
         

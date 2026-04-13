@@ -19,7 +19,7 @@ Sub DeletarLinhasComCelulaVazia()
         ' Verifica se a célula na coluna especificada está em branco
         If ws.Cells(i, ColunaParaVerificar).Value = "" Then
             ' Se estiver em branco, deleta a linha inteira
-            ws.Range("A" & i & ":AW" & i).ClearContents ' Limpa de A at� Z (ajuste o Z)
+            ws.Range("A" & i & ":AY" & i).ClearContents ' Limpa de A até AY
         End If
     Next i
 

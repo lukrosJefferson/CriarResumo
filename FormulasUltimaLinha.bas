@@ -14,7 +14,7 @@ Sub FormulasUltimaLinha()
 
     Set ws = ThisWorkbook.Sheets("RESUMO") ' Defina sua planilha
     
-    Dim Colunas(0 To 42) As String
+    Dim Colunas(0 To 43) As String
     Dim IDColunas As Integer
     
     Colunas(0)  = "B"

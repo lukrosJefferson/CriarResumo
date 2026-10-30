@@ -14,7 +14,7 @@ Sub ExpandirFormulaAutomatico()
     FimForDF = Range("B3").Value
     
     ' Declarando o Array
-    Dim CeluasDaFormula(0 To 16) As String
+    Dim CeluasDaFormula(0 To 17) As String
     Dim CeluasDF As Integer
     
     ' Atribuindo o valor do Array
@@ -31,14 +31,15 @@ Sub ExpandirFormulaAutomatico()
     CeluasDaFormula(10) = "AK3"
     CeluasDaFormula(11) = "AM3"
     CeluasDaFormula(12) = "AN3"
-    CeluasDaFormula(13) = "AR3"
-    CeluasDaFormula(14) = "AS3"
-    CeluasDaFormula(15) = "AW3"
-	CeluasDaFormula(16) = "AY3"
+	CeluasDaFormula(13) = "AO3"
+    CeluasDaFormula(14) = "AR3"
+    CeluasDaFormula(15) = "AS3"
+    CeluasDaFormula(16) = "AW3"
+	CeluasDaFormula(17) = "AY3"
 	
     
     ' Declarando o Array
-    Dim FormulaDaColuna(0 To 16) As String
+    Dim FormulaDaColuna(0 To 17) As String
     Dim FormulaDC As Integer
     
     ' Atribuindo o valor do Array
@@ -55,13 +56,14 @@ Sub ExpandirFormulaAutomatico()
     FormulaDaColuna(10) = "=SEERRO(AJ3/AF3;0)"
     FormulaDaColuna(11) = "=SEERRO(AJ3+AL3;0)"
     FormulaDaColuna(12) = "=SEERRO(AM3/AF3;0)"
-    FormulaDaColuna(13) = "=SEERRO(AM3+AO3+AP3+AQ3;0)"
-    FormulaDaColuna(14) = "=SEERRO(AR3/AF3;0)"
-    FormulaDaColuna(15) = "=SEERRO(AG3/AV3;0)"
-	FormulaDaColuna(16) = "=SEERRO(AX3/AJ3;0)"
+	FormulaDaColuna(13) = "0"
+    FormulaDaColuna(14) = "=SEERRO(AM3+AO3+AP3+AQ3;0)"
+	FormulaDaColuna(15) = "=SEERRO(AR3/AF3;0)"
+    FormulaDaColuna(16) = "=SEERRO(AG3/AV3;0)"
+	FormulaDaColuna(17) = "=SEERRO(AX3/AJ3;0)"
     
     ' Declarando o Array
-    Dim RangeDaFormula(0 To 16) As String
+    Dim RangeDaFormula(0 To 17) As String
     Dim RangeDF As Integer
     
     ' Atribuindo o valor do Array
@@ -78,10 +80,11 @@ Sub ExpandirFormulaAutomatico()
     RangeDaFormula(10) = "AK3:AK"
     RangeDaFormula(11) = "AM3:AM"
     RangeDaFormula(12) = "AN3:AN"
-    RangeDaFormula(13) = "AR3:AR"
-    RangeDaFormula(14) = "AS3:AS"
-    RangeDaFormula(15) = "AW3:AW"
-	RangeDaFormula(16) = "AY3:AY"
+	RangeDaFormula(13) = "AO3:AO"
+    RangeDaFormula(14) = "AR3:AR"
+    RangeDaFormula(15) = "AS3:AS"
+    RangeDaFormula(16) = "AW3:AW"
+	RangeDaFormula(17) = "AY3:AY"
     
     ' Define a planilha em que você está trabalhando
     Set ws = ThisWorkbook.Sheets("RESUMO") ' Altere para o nome real da sua planilha
